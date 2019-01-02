@@ -10,6 +10,7 @@ Because:
 - Fits better with the original structure of _s
 - Uses bult in WordPress template locator far more
 - Easily slide dependency updates in
+- Has jQuery 3.x
 - Has some of the extra code from Understrap removed
 - Comes pre-bundled with some fun shit:
   - [blueimp gallery](https://github.com/blueimp/Gallery)
