@@ -1,7 +1,7 @@
 Sammaye's Understrap
 ===
 
-This is my rip-off of [Understrap](https://github.com/understrap/understrap) by [@holger411 and friends](https://github.com/orgs/understrap/people). This is not a fork of Understrap. It is completely made anew from the grand daddy of our themes, [_s](http://underscores.me/).
+This is my rip-off of [Understrap](https://github.com/understrap/understrap) by [@holger1411 and friends](https://github.com/orgs/understrap/people). This is not a fork of Understrap. It is completely made anew from the grand daddy of our themes, [_s](http://underscores.me/).
 
 ## Why?
 
