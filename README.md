@@ -44,6 +44,3 @@ Copy it, and replace these:
 
 - `understrap` with your theme slug
 - `Under Strap` with your full text theme name
-
-
-
