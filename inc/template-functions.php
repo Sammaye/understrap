@@ -124,6 +124,15 @@ function understrap_mobile_web_app_meta() {
 add_action( 'wp_head', 'understrap_mobile_web_app_meta' );
 
 /**
+ * Disable Elementor globals on theme activation
+ */
+function admiraljet_disable_elementor_globals () {
+	update_option( 'elementor_disable_color_schemes', 'yes' );
+	update_option( 'elementor_disable_typography_schemes', 'yes' );
+}
+add_action('after_switch_theme', 'admiraljet_disable_elementor_globals');
+
+/**
  * This function adds the icon to our social menu
  *
  * @param  string  $item_output The menu item output.
