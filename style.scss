@@ -20,3 +20,18 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
   max-width: 100%;
   height: auto;
 }
+
+.alignleft {
+  display: inline;
+  float: left;
+}
+
+.alignright {
+  display: inline;
+  float: right;
+}
+
+.aligncenter {
+  margin-right: auto;
+  margin-left: auto;
+}

@@ -21,4 +21,19 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
   height: auto;
 }
 
+.alignleft {
+  display: inline;
+  float: left;
+}
+
+.alignright {
+  display: inline;
+  float: right;
+}
+
+.aligncenter {
+  margin-right: auto;
+  margin-left: auto;
+}
+
 /*# sourceMappingURL=style.css.map */
