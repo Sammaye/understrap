@@ -1,15 +1,15 @@
-$(function(){
-    autosize($('textarea.autosize'));
+jQuery(function() {
+    autosize(jQuery('textarea.autosize'));
 });
 
-$(document).on('submit', '.ajax-form', function (e) {
+jQuery(document).on('submit', '.ajax-form', function (e) {
     e.preventDefault();
-    var form = $(this).serializeArray(),
-        el = $(this);
+    var form = jQuery(this).serializeArray(),
+        el = jQuery(this);
 
-    form[form.length] = {name: 'action', value: $(this).attr('action')};
+    form[form.length] = {name: 'action', value: jQuery(this).attr('action')};
 
-    return $.post(
+    return jQuery.post(
         params.ajaxurl,
         form,
         null,
@@ -20,22 +20,22 @@ $(document).on('submit', '.ajax-form', function (e) {
         var alert = el.find('.alert');
 
         if (data.success) {
-            alert.empty().append($('<p/>').html(data.message));
+            alert.empty().append(jQuery('<p/>').html(data.message));
             flashSuccess(alert, '', true);
         } else {
             ul = '';
             if (data.errors && data.errors.length > 0) {
-                ul = $('<ul/>');
-                $.each(data.errors, function (k, v) {
+                ul = jQuery('<ul/>');
+                jQuery.each(data.errors, function (k, v) {
                     ul
                         .append(
-                            $('<li/>').html(v)
+                            jQuery('<li/>').html(v)
                         );
                 });
             }
 
             alert.empty().append(
-                $('<p/>').html(data.message)
+                jQuery('<p/>').html(data.message)
             ).append(ul);
 
             flashDanger(alert, '', true);
@@ -57,12 +57,12 @@ function flash(alert_el, type, message, dismissable) {
 
     if (dismissable) {
         alert_el.addClass('alert-dismissable').prepend(
-            $('<button type="button" class="close" data-dismiss="alert" aria-label="Close"/>')
-                .append($('<span aria-hidden="true"/>').html('&times;'))
+            jQuery('<button type="button" class="close" data-dismiss="alert" aria-label="Close"/>')
+                .append(jQuery('<span aria-hidden="true"/>').html('&times;'))
         );
         alert_el.alert();
         alert_el.on('close.bs.alert', function (e) {
-            $(this).after($('<div class="alert fade show d-none" role="alert"/>'));
+            jQuery(this).after(jQuery('<div class="alert fade show d-none" role="alert"/>'));
         });
     }
 
@@ -86,3 +86,4 @@ function flashInfo(alert, message, dismissable) {
 function flashSuccess(alert, message, dismissable) {
     return flash(alert, 'success', message, dismissable);
 }
+

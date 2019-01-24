@@ -147,6 +147,8 @@ function understrap_scripts() {
 
 	wp_enqueue_style( 'understrap-style', get_stylesheet_uri() );
 
+	wp_enqueue_script('jquery');
+	/*
 	wp_deregister_script('jquery');
 	wp_enqueue_script('jquery', 'https://code.jquery.com/jquery-3.3.1.min.js');
 	wp_script_add_data(
@@ -154,6 +156,7 @@ function understrap_scripts() {
 		array( 'integrity', 'crossorigin' ),
 		array( 'sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=', 'anonymous' )
 	);
+	*/
 
 	wp_enqueue_script( 'jquery-ui-core' );
 
